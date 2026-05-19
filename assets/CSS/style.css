@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
   margin: 0;
   padding: 0;
@@ -89,23 +91,16 @@ footer a {
 
 .header {
   display: flex;
-
   justify-content: space-between;
-
   align-items: center;
-
   padding: 20px 5%;
-
   background-color: white;
-
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .nav-list {
   display: flex;
-
   gap: 30px;
-
   list-style: none;
 }
 
@@ -118,21 +113,13 @@ footer a {
 
 .project-card {
   display: flex;
-
   flex-direction: column;
-
   width: calc(33.333% - 20px);
-
   min-width: 250px;
-
   background-color: white;
-
   border-radius: 10px;
-
   padding: 20px;
-
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-
   transition: 0.3s;
 }
 
@@ -146,9 +133,7 @@ footer a {
 
 .section-title {
   text-align: center;
-
   margin-top: 40px;
-
   font-size: 2rem;
 }
 
@@ -185,4 +170,42 @@ footer a {
     flex-direction: column;
     gap: 1rem;
   }
+}
+
+.checkout-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-group input:invalid:focus {
+  border-color: red;
+}
+
+.form-group input:valid {
+  border-color: green;
 }
