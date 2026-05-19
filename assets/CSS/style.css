@@ -1,19 +1,27 @@
 * {
-  margin: bottom;
+  margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Розміри елемента включають внутрішні відступи та рамки */
+  box-sizing: border-box;
+  /* Розміри елемента включають внутрішні відступи та рамки */
 }
 
 /* Глобальні змінні проєкту (Палітра TechShop) */
 :root {
-  --primary-color: #2563eb; /* Ваш фірмовий синій */
-  --primary-hover: #1d4ed8; /* Колір при наведенні */
-  --accent-color: #f59e0b;  /* Акцентний помаранчевий */
-  --text-dark: #1f2937;     /* Основний текст */
-  --text-light: #6b7280;    /* Другорядний текст */
-  --bg-color: #c8d8e8;      /* Фон сторінки */
+  --primary-color: #2563eb;
+  /* Ваш фірмовий синій */
+  --primary-hover: #1d4ed8;
+  /* Колір при наведенні */
+  --accent-color: #f59e0b;
+  /* Акцентний помаранчевий */
+  --text-dark: #1f2937;
+  /* Основний текст */
+  --text-light: #6b7280;
+  /* Другорядний текст */
+  --bg-color: #c8d8e8;
+  /* Фон сторінки */
   --font-main: "Inter", sans-serif;
 }
+
 body {
   font-family: var(--font-main);
   background-color: var(--bg-color);
@@ -21,10 +29,14 @@ body {
   line-height: 1.6;
   font-size: 16px;
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
   font-weight: 700;
   margin-bottom: 16px;
 }
+
 a {
   text-decoration: none;
   color: var(--primary-color);
@@ -33,9 +45,11 @@ a {
 a:hover {
   color: var(--primary-hover);
 }
+
 footer a {
   color: var(--text-light);
 }
+
 .btn {
   display: inline-block;
   padding: 12px 24px;
@@ -54,10 +68,11 @@ footer a {
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(37, 99, 235, 0.3);
 }
+
 .hero {
   height: 60vh;
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-                    url('https://picsum.photos/1200/800');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('https://picsum.photos/1200/800');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -70,4 +85,74 @@ footer a {
 
 .hero h1 {
   font-size: 3rem;
+}
+
+.header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 20px 5%;
+
+  background-color: white;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list {
+  display: flex;
+
+  gap: 30px;
+
+  list-style: none;
+}
+
+.projects-grid {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 20px;
+
+  justify-content: center;
+
+  padding: 40px;
+}
+
+.project-card {
+  display: flex;
+
+  flex-direction: column;
+
+  width: calc(33.333% - 20px);
+
+  min-width: 250px;
+
+  background-color: white;
+
+  border-radius: 10px;
+
+  padding: 20px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card .btn {
+  margin-top: auto;
+}
+
+.section-title {
+  text-align: center;
+
+  margin-top: 40px;
+
+  font-size: 2rem;
 }

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-      <!-- Google Fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -11,19 +12,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Моє портфоліо </title>
     <style>
-    html {
-        scroll-behavior: smooth;
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 </head>
+
 <body>
-    <header> 
-        <h1> Сторінка 1</h1>
-        <div><img src="https://picsum.photos/1200/300"></div>
+    <header class="header">
+
+        <div class="logo">
+            <h1>Портфоліо</h1>
+        </div>
+
         <nav>
-            <ul>
+            <ul class="nav-list">
                 <li><a href="#"> ГОЛОВНА </a></li>
-                <li><a href="#"> ПРО МЕНЕ </a></li>
                 <li><a href="#"> ГАЛЕРЕЯ </a></li>
                 <li><a href="#"> КОНТАКТИ </a></li>
             </ul>
@@ -31,10 +35,66 @@
     </header>
     <main>
         <a href="about.html" class="btn"> Про мене</a>
-        <section class="hero"></section>
+        <section class="hero">
+
+            <h1>Моє портфоліо</h1>
+
+            <p>
+                Мої роботи, досягнення та цілі
+            </p>
+
+        </section>
     </main>
     <aside>
-        <h2> Бічне меню ASIDE </h2>
+        <h2 class="section-title">
+            Мої роботи
+        </h2>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+
+                <h3>Лабораторна №1</h3>
+
+                <p>
+                    Створення HTML структури сайту.
+                </p>
+
+                <a href="#" class="btn">
+                    Детальніше
+                </a>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Лабораторна №2</h3>
+
+                <p>
+                    Робота з CSS стилями.
+                </p>
+
+                <a href="#" class="btn">
+                    Детальніше
+                </a>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Лабораторна №3</h3>
+
+                <p>
+                    Flexbox та адаптивність.
+                </p>
+
+                <a href="#" class="btn">
+                    Детальніше
+                </a>
+
+            </div>
+
+        </div>
         <ul>
             <li><a href="#"> Посилання 1 </a></li>
             <li><a href="#"> Посилання 2 </a></li>
@@ -51,9 +111,10 @@
         </ul>
         <form action="">
             <label for="" email> Ваша електронна пошта </label>
-            <input type="email" name="email" id="email"/>
-            <input type="button" value="Підписатися"/>
+            <input type="email" name="email" id="email" />
+            <input type="button" value="Підписатися" />
         </form>
     </footer>
 </body>
+
 </html>
