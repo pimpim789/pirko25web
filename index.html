@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets\css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Моє портфоліо </title>
     <style>
@@ -33,75 +33,51 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <a href="about.html" class="btn"> Про мене</a>
-        <section class="hero">
+    <main class="page-layout">
 
-            <h1>Моє портфоліо</h1>
+        <aside class="sidebar">
+            <h3>Навігація</h3>
+            <ul>
+                <li><a href="#">Про мене</a></li>
+                <li><a href="#">Мої роботи</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </aside>
 
-            <p>
-                Мої роботи, досягнення та цілі
-            </p>
+        <section class="content">
+
+            <section class="hero">
+                <h1>Моє портфоліо</h1>
+                <p>Мої роботи, досягнення та цілі</p>
+            </section>
+
+            <h2 class="section-title">Мої роботи</h2>
+
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <h3>Лабораторна №1</h3>
+                    <p>Створення HTML структури сайту.</p>
+                    <a href="#" class="btn">Детальніше</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Лабораторна №2</h3>
+                    <p>Робота з CSS стилями.</p>
+                    <a href="#" class="btn">Детальніше</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Лабораторна №3</h3>
+                    <p>Flexbox та адаптивність.</p>
+                    <a href="#" class="btn">Детальніше</a>
+                </div>
+
+            </div>
 
         </section>
+
     </main>
-    <aside>
-        <h2 class="section-title">
-            Мої роботи
-        </h2>
-
-        <div class="projects-grid">
-
-            <div class="project-card">
-
-                <h3>Лабораторна №1</h3>
-
-                <p>
-                    Створення HTML структури сайту.
-                </p>
-
-                <a href="#" class="btn">
-                    Детальніше
-                </a>
-
-            </div>
-
-            <div class="project-card">
-
-                <h3>Лабораторна №2</h3>
-
-                <p>
-                    Робота з CSS стилями.
-                </p>
-
-                <a href="#" class="btn">
-                    Детальніше
-                </a>
-
-            </div>
-
-            <div class="project-card">
-
-                <h3>Лабораторна №3</h3>
-
-                <p>
-                    Flexbox та адаптивність.
-                </p>
-
-                <a href="#" class="btn">
-                    Детальніше
-                </a>
-
-            </div>
-
-        </div>
-        <ul>
-            <li><a href="#"> Посилання 1 </a></li>
-            <li><a href="#"> Посилання 2 </a></li>
-            <li><a href="#"> Посилання 3 </a></li>
-            <li><a href="#"> Посилання 4 </a></li>
-        </ul>
-    </aside>
     <footer id="footer">
         <p>FOOTER: &copy; 2026 CS-25 </p>
         <ul>
