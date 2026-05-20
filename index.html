@@ -30,19 +30,13 @@
                 <li><a href="#"> ГОЛОВНА </a></li>
                 <li><a href="#"> ГАЛЕРЕЯ </a></li>
                 <li><a href="#"> КОНТАКТИ </a></li>
-                <li><a href="checkout.html">Форма</a></li>
             </ul>
         </nav>
     </header>
     <main>
 
         <aside class="sidebar">
-            <h3>Навігація</h3>
-            <ul>
-                <li><a href="#">Про мене</a></li>
-                <li><a href="#">Мої роботи</a></li>
-                <li><a href="#">Контакти</a></li>
-            </ul>
+            ...
         </aside>
 
         <section class="content">
@@ -55,26 +49,34 @@
             <h2 class="section-title">Мої роботи</h2>
 
             <div class="projects-grid">
-
-                <div class="project-card">
-                    <h3>Лабораторна №1</h3>
-                    <p>Створення HTML структури сайту.</p>
-                    <a href="#" class="btn">Детальніше</a>
-                </div>
-
-                <div class="project-card">
-                    <h3>Лабораторна №2</h3>
-                    <p>Робота з CSS стилями.</p>
-                    <a href="#" class="btn">Детальніше</a>
-                </div>
-
-                <div class="project-card">
-                    <h3>Лабораторна №3</h3>
-                    <p>Flexbox та адаптивність.</p>
-                    <a href="#" class="btn">Детальніше</a>
-                </div>
-
+                ...
             </div>
+
+            <!-- 🔥 ОЦЕ ДОДАЙ ФОРМУ ТУТ -->
+            <h2 class="section-title">Зв'язатися зі мною</h2>
+
+            <form class="checkout-form">
+
+                <div class="form-group">
+                    <label>Ім'я:</label>
+                    <input type="text" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Телефон:</label>
+                    <input type="tel" pattern="\+380\d{9}" required>
+                </div>
+
+                <button class="btn" type="submit">
+                    Надіслати
+                </button>
+
+            </form>
 
         </section>
 
